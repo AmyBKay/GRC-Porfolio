@@ -269,7 +269,7 @@
 
   /* ============ CERTIFICATIONS (seals) ============ */
   .cert-grid{
-    display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:22px;
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
   }
   .cert-card{
     background:var(--ink);
@@ -295,8 +295,8 @@
   .cert-badge span{
     font-family:var(--mono);
     font-weight:500;
-    font-size:12.5px;
-    letter-spacing:0.02em;
+    font-size:15px;
+    letter-spacing:0.03em;
     color:var(--brass-soft);
   }
   .cert-card h3{
@@ -357,125 +357,6 @@
   }
   @media (max-width:700px){
     .docket-row{ grid-template-columns:1fr; gap:6px; }
-  }
-
-  /* ============ SELECTED PROJECTS ============ */
-  .project-intro{
-    font-family:var(--mono);
-    font-size:13px;
-    color:var(--slate);
-    margin:-24px 0 32px;
-  }
-  .project-intro a{ color:var(--verified); text-decoration:none; border-bottom:1px solid rgba(47,111,98,0.35); }
-  .project-intro a:hover{ border-color:var(--verified); }
-  .project-grid{
-    display:grid; grid-template-columns:repeat(2, 1fr); gap:22px;
-  }
-  .project-card{
-    border:1px solid var(--line);
-    background:var(--parchment);
-    padding:26px;
-  }
-  .project-card .id{
-    font-family:var(--mono); font-size:11px; color:var(--brass);
-    letter-spacing:0.08em;
-  }
-  .project-card h3{
-    font-family:var(--display);
-    font-weight:500;
-    font-size:18px;
-    margin:8px 0 10px;
-  }
-  .project-card .meta{
-    font-family:var(--mono);
-    font-size:11.5px;
-    line-height:1.7;
-    color:var(--slate);
-    margin:0 0 12px;
-  }
-  .project-card .meta b{
-    color:var(--ink);
-    font-weight:500;
-  }
-  .project-card p{
-    font-size:14.5px;
-    color:var(--charcoal);
-    margin:0;
-  }
-  .project-card.capstone{
-    grid-column:1 / -1;
-    background:var(--ink);
-    color:var(--parchment);
-    border-color:var(--ink);
-  }
-  .project-card.capstone .id{ color:var(--brass-soft); }
-  .project-card.capstone h3{ color:var(--parchment); font-size:21px; }
-  .project-card.capstone .meta{ color:rgba(246,243,234,0.65); }
-  .project-card.capstone .meta b{ color:var(--brass-soft); }
-  .project-card.capstone p{ color:rgba(246,243,234,0.85); }
-  .project-note{
-    margin-top:8px;
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--slate);
-  }
-  .project-note a{ color:var(--verified); text-decoration:none; border-bottom:1px solid rgba(47,111,98,0.35); }
-  @media (max-width:700px){
-    .project-grid{ grid-template-columns:1fr; }
-  }
-
-  /* ============ EDUCATION & PUBLICATIONS ============ */
-  .edu-pub-grid{
-    display:grid; grid-template-columns:1.1fr 1fr; gap:56px;
-  }
-  .edu-item{ margin-bottom:24px; }
-  .edu-item:last-child{ margin-bottom:0; }
-  .edu-item .deg{
-    font-family:var(--display);
-    font-weight:500;
-    font-size:17px;
-    margin:0 0 4px;
-  }
-  .edu-item .inst{
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--slate);
-  }
-  .edu-item .diss{
-    font-size:13.5px;
-    color:var(--slate);
-    margin-top:6px;
-  }
-  .sub-label{
-    font-family:var(--mono);
-    font-size:11px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--brass);
-    margin:0 0 16px;
-    display:block;
-  }
-  .pub-list{
-    list-style:none; margin:0 0 32px; padding:0;
-  }
-  .pub-list li{
-    padding:12px 0;
-    border-top:1px solid var(--line);
-    font-size:14.5px;
-  }
-  .pub-list li:last-child{ border-bottom:1px solid var(--line); }
-  .member-row{
-    display:flex; gap:12px; flex-wrap:wrap;
-  }
-  .member-row span{
-    font-family:var(--mono);
-    font-size:12px;
-    border:1px solid var(--line);
-    padding:6px 12px;
-    color:var(--slate);
-  }
-  @media (max-width:760px){
-    .edu-pub-grid{ grid-template-columns:1fr; }
   }
 
   /* ============ EXPERIENCE / PROJECT LEDGER ============ */
@@ -601,8 +482,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#credentials">Credentials</a></li>
       <li><a href="#focus">Focus</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#work">Experience</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -611,25 +491,23 @@
 <section class="hero">
   <div class="wrap">
     <div class="docket">
-      <span>File No. GRC‑ENG — 2026</span>
+      <span>File No. AI‑GOV — 2026</span>
       <span class="sep">/</span>
-      <span>Open to new roles</span>
+      <span>Status: Actively Interviewing</span>
       <span class="sep">/</span>
-      <span>Evington, VA</span>
+      <span>Phoenix &amp; Tucson, AZ</span>
     </div>
-    <h1>Compliance requirements,<br><em>enforced and evidenced</em> — not just written down.</h1>
+    <h1>Governance, risk, and<br><em>compliance</em>, made legible.</h1>
     <p class="lede">
-      Senior GRC Security Engineer with 15+ years spanning IT and financial audit,
-      project management, and secure information systems design — paired with
-      hands-on cloud security engineering in AWS and GCP. I turn static compliance
-      requirements into controls that are actually enforced, and evidence that actually holds up.
+      I audit systems, translate control frameworks into plain language, and help
+      organizations govern AI the way they'd govern any other high‑stakes process —
+      deliberately, and with evidence. PMP · CISA · CISM. PhD candidate, AI Governance &amp; Public Policy.
     </p>
 
     <div class="seal-row">
-      <span class="seal"><span class="dot"></span>PMP</span>
-      <span class="seal"><span class="dot"></span>CISA</span>
-      <span class="seal"><span class="dot"></span>CISM</span>
-      <span class="seal"><span class="dot"></span>CISSP (Candidate)</span>
+      <span class="seal"><span class="dot"></span>PMP — Project Management Professional</span>
+      <span class="seal"><span class="dot"></span>CISA — Certified Information Systems Auditor</span>
+      <span class="seal"><span class="dot"></span>CISM — Certified Information Security Manager</span>
     </div>
 
     <div class="hero-cta">
@@ -648,32 +526,25 @@
     <div class="about-grid">
       <div class="reveal">
         <p>
-          My foundation is audit and project management: I've led full audit
-          lifecycles end-to-end — planning through issue validation — under SOX,
-          GLBA, and Government Auditing Standards, and maintained continuous
-          audit-readiness for NERC CIP (CIP-002 through CIP-013). As a PMP, I bring
-          formal project structure — scoped risk registers, remediation roadmaps,
-          cross-functional stakeholder management — to every compliance program I run.
+          [Placeholder bio — replace with 2–3 sentences in Amy's voice: how she got
+          into audit and compliance, what she's drawn to about AI governance, and
+          the kind of problems she wants to work on next.]
         </p>
         <p>
-          That audit discipline now extends into hands-on cloud security engineering:
-          Infrastructure-as-Code with Terraform, keyless CI/CD authentication
-          (OIDC / Workload Identity Federation), and policy-as-code compliance gates
-          (OPA/Conftest, tfsec) that turn static requirements into enforced, evidenced
-          controls. My doctoral research is in AI GRC, AI model supply chain integrity,
-          and adversarial risk — work that maps directly onto emerging AI governance
-          requirements.
+          [Optional second paragraph: a specific accomplishment or turning point —
+          an audit that mattered, a framework she helped implement, or why the PhD
+          in AI Governance &amp; Public Policy came next.]
         </p>
       </div>
       <dl class="fact-sheet reveal">
         <dt>Based in</dt>
-        <dd>Evington, VA</dd>
+        <dd>Phoenix / Tucson, AZ area</dd>
         <dt>Education</dt>
-        <dd>PhD Candidate — Public Policy, AI Governance &amp; National Security</dd>
+        <dd>PhD Candidate — AI Governance &amp; Public Policy</dd>
         <dt>Certifications</dt>
-        <dd>PMP, CISA, CISM, CISSP (Candidate), CGE‑P, CGE‑Auditor</dd>
-        <dt>Frameworks</dt>
-        <dd>NIST CSF/RMF, SP 800‑53, SOC 2, ISO 27001, FedRAMP, NERC CIP</dd>
+        <dd>PMP, CISA, CISM</dd>
+        <dt>Looking for</dt>
+        <dd>Roles in audit, cybersecurity compliance, AI governance, and operations</dd>
       </dl>
     </div>
   </div>
@@ -690,49 +561,19 @@
         <div class="cert-badge"><span>PMP</span></div>
         <h3>Project Management Professional</h3>
         <p>Project Management Institute</p>
-        <div class="cert-status"><span class="dot"></span>Active</div>
+        <div class="cert-status"><span class="dot"></span>Verified</div>
       </div>
       <div class="cert-card reveal">
         <div class="cert-badge"><span>CISA</span></div>
         <h3>Certified Information Systems Auditor</h3>
         <p>ISACA</p>
-        <div class="cert-status"><span class="dot"></span>Active</div>
+        <div class="cert-status"><span class="dot"></span>Verified</div>
       </div>
       <div class="cert-card reveal">
         <div class="cert-badge"><span>CISM</span></div>
         <h3>Certified Information Security Manager</h3>
         <p>ISACA</p>
-        <div class="cert-status"><span class="dot"></span>Active</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge"><span>CISSP</span></div>
-        <h3>Certified Information Systems Security Professional</h3>
-        <p>(ISC)²</p>
-        <div class="cert-status"><span class="dot"></span>Candidate — Aug 2026</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge"><span>CGE‑P</span></div>
-        <h3>Certified GRC Engineer — Practitioner</h3>
-        <p>GRC Engineering Club</p>
-        <div class="cert-status"><span class="dot"></span>Exam Passed — Jul 2026</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge"><span>CGE‑A</span></div>
-        <h3>Certified GRC Engineer — Auditor Specialty</h3>
-        <p>GRC Engineering Club</p>
-        <div class="cert-status"><span class="dot"></span>Active</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge"><span>AAIA</span></div>
-        <h3>Advanced in AI Audit</h3>
-        <p>ISACA</p>
-        <div class="cert-status"><span class="dot"></span>Candidate — 2026</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge"><span>AAISM</span></div>
-        <h3>Advanced in AI Security Management</h3>
-        <p>ISACA</p>
-        <div class="cert-status"><span class="dot"></span>Candidate — 2026</div>
+        <div class="cert-status"><span class="dot"></span>Verified</div>
       </div>
     </div>
   </div>
@@ -747,241 +588,60 @@
     <div class="docket-list reveal">
       <div class="docket-row">
         <span class="id">FA‑01</span>
-        <h3>GRC &amp; Compliance Engineering</h3>
-        <p>NIST CSF/RMF, SP 800‑53, SOC 2, ISO 27001/27701, FedRAMP, PCI DSS, HIPAA, SOX, NERC CIP, COBIT, OSCAL. Currently working toward ISO 42001.</p>
+        <h3>AI Governance</h3>
+        <p>[Placeholder — e.g. AI risk assessments, model governance frameworks, policy development for responsible AI deployment.]</p>
       </div>
       <div class="docket-row">
         <span class="id">FA‑02</span>
-        <h3>Cloud Security &amp; Architecture</h3>
-        <p>AWS (IAM, CloudTrail, CloudFormation, OIDC, Security Hub), GCP (IAM, Org Policy, Workload Identity Federation, Cloud Audit Logs), Azure, cloud security posture management.</p>
+        <h3>IT &amp; Compliance Audit</h3>
+        <p>[Placeholder — e.g. control testing, audit planning, SOX / SOC 2 / NIST engagements, findings remediation.]</p>
       </div>
       <div class="docket-row">
         <span class="id">FA‑03</span>
-        <h3>Infrastructure‑as‑Code &amp; Automation</h3>
-        <p>Terraform, CloudFormation, CI/CD pipelines (GitHub Actions, GitLab CI), policy‑as‑code (OPA/Conftest, tfsec), OSCAL authoring &amp; validation (Trestle), Cosign artifact signing.</p>
+        <h3>Cybersecurity Compliance</h3>
+        <p>[Placeholder — e.g. security program assessments, framework crosswalks, risk register management.]</p>
       </div>
       <div class="docket-row">
         <span class="id">FA‑04</span>
-        <h3>AI Governance</h3>
-        <p>NIST AI RMF assessments, ISO/IEC 42001 internal audits, and doctoral research in AI model supply chain integrity and adversarial risk.</p>
+        <h3>Operations</h3>
+        <p>[Placeholder — e.g. process design, cross‑functional project delivery, stakeholder management.]</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="section-num">04</span>
-      <h2>Selected projects</h2>
-    </div>
-    <p class="project-intro reveal">Hands-on GRC engineering portfolio — code and evidence at
-      <a href="https://github.com/AmyBKay/cgep-labs" target="_blank" rel="noopener">github.com/AmyBKay/cgep-labs</a></p>
-    <div class="project-grid reveal">
-      <div class="project-card">
-        <span class="id">PROJ‑01</span>
-        <h3>Compliant Cloud Storage Baseline</h3>
-        <p class="meta"><b>Stack:</b> Terraform, AWS S3, AWS IAM<br><b>Controls:</b> NIST SP 800‑53 — SC‑28, AC‑3, AU‑3, AU‑6, CM‑6</p>
-        <p>Built a hardened S3 bucket in Terraform satisfying five NIST 800‑53 controls end‑to‑end: encryption at rest, blocked public access, dedicated access logging, and enforced tagging/versioning. Captured pre‑ and post‑deploy compliance state as machine‑readable JSON evidence rather than console screenshots — the evidence‑as‑code pattern used throughout.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑02</span>
-        <h3>Compliance‑as‑Code Terraform Modules</h3>
-        <p class="meta"><b>Stack:</b> Terraform, GCP Cloud KMS, GCP Storage, GCP IAM<br><b>Controls:</b> NIST SP 800‑53 — SC‑28, AC‑2, CM‑6</p>
-        <p>Designed a reusable Terraform module bundling a KMS keyring, a customer‑managed rotating key, IAM bindings, and a hardened bucket into one deployable unit — with the security baseline locked inside so consuming teams can't opt out. Validated that dev and prod inherited an identical, non‑negotiable posture.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑03</span>
-        <h3>IaC as Tamper‑Evident Compliance Evidence</h3>
-        <p class="meta"><b>Stack:</b> Terraform, AWS S3 Object Lock, Bash, SHA‑256, Cosign<br><b>Controls:</b> Evidence integrity, attribution, reproducibility</p>
-        <p>Built a write‑once evidence vault using S3 Object Lock and a capture script that hashes and archives Terraform state so it can't be altered or quietly deleted. Established the three properties auditors actually care about — integrity, attribution, reproducibility — replacing "trust me" screenshots with cryptographically verifiable proof.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑04</span>
-        <h3>Policy‑as‑Code: Rego Compliance Policies</h3>
-        <p class="meta"><b>Stack:</b> Open Policy Agent (OPA), Rego, GCP fixtures<br><b>Controls:</b> Custom deny‑rules mapped to NIST control IDs</p>
-        <p>Authored and unit‑tested OPA policies in Rego that inspect a Terraform plan and automatically reject it on a control violation — before anything deploys. Wrote deliberate policy‑violation test cases to prove each rule catches what it claims to.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑05</span>
-        <h3>Cross‑Cloud Policy Gate with Conftest</h3>
-        <p class="meta"><b>Stack:</b> Conftest, OPA/Rego, AWS, Bash<br><b>Controls:</b> Same control IDs (e.g. SC‑28) enforced across AWS and GCP</p>
-        <p>Ported the Rego policy library written for GCP to run against AWS Terraform plans, proving a control ID travels across cloud providers even when its implementation doesn't. Delivered <code>policy-gate.sh</code> — one portable script a CI pipeline can call to fail‑closed regardless of cloud.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑06</span>
-        <h3>GRC Evidence Pipeline</h3>
-        <p class="meta"><b>Stack:</b> GitHub Actions, OIDC, Conftest, tfsec, AWS<br><b>Controls:</b> Continuous monitoring, automated audit trail generation</p>
-        <p>Built a GitHub Actions workflow that runs on every pull request: authenticates to AWS via OIDC (no long‑lived credentials), plans the Terraform, runs the Conftest policy gate, scans with tfsec, and uploads a named evidence artifact. Enforces compliance and documents it automatically.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑07</span>
-        <h3>Evidence Chain of Custody with Keyless Signing</h3>
-        <p class="meta"><b>Stack:</b> Sigstore, Cosign, Fulcio, Rekor, GitHub OIDC<br><b>Controls:</b> Authenticity, integrity, timeliness, preservation</p>
-        <p>Wired Sigstore's keyless signing into the CI pipeline so every piece of evidence is cryptographically signed and timestamped using the workflow's own OIDC identity — no private keys to manage or leak. Signatures are publicly verifiable in Rekor's transparency log.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑08</span>
-        <h3>AWS Security Services Baseline</h3>
-        <p class="meta"><b>Stack:</b> Terraform, AWS CloudTrail, AWS Config, AWS Security Hub<br><b>Controls:</b> NIST 800‑53 — AU‑2, AU‑12, AU‑10, CM‑2, CM‑6, CM‑8, RA‑5, SI‑4</p>
-        <p>Stood up the always‑on, account‑level AWS backbone under the CI evidence pipeline: multi‑region CloudTrail, AWS Config resource history, and Security Hub findings mapped to NIST 800‑53. Moved "continuous monitoring" from a compliance‑document phrase to a live, queryable JSON feed.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑09</span>
-        <h3>GCP Security Services Baseline</h3>
-        <p class="meta"><b>Stack:</b> Terraform, GCP Org Policy, Workload Identity Federation, Cloud Audit Logs<br><b>Controls:</b> NIST 800‑53 — CM‑6, AC‑2, AC‑3</p>
-        <p>Deployed GCP's identity‑first, preventive model: Org Policy constraints that reject non‑compliant resources at the API call itself, Workload Identity Federation to eliminate downloadable service‑account keys, and Data Access logging across storage, KMS, and IAM. Demonstrated the detective‑vs‑preventive distinction in practice.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑10</span>
-        <h3>OSCAL Compliance Mapping</h3>
-        <p class="meta"><b>Stack:</b> NIST OSCAL, compliance‑trestle, Python<br><b>Controls:</b> NIST SP 800‑53 Rev 5 (machine‑readable catalog/profile/component mapping)</p>
-        <p>Authored NIST OSCAL component definitions mapping Terraform‑enforced AWS S3 controls to NIST SP 800‑53 Rev 5 — validated against the official schema. Found and remediated a missing audit‑logging control during authoring, then verified the evidence chain with SHA‑256 checks and Cosign signatures.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑11</span>
-        <h3>Custom Compliance Checks for Off‑the‑Shelf GRC Gaps</h3>
-        <p class="meta"><b>Stack:</b> Python, boto3, moto, Faker, PyYAML, pytest<br><b>Controls:</b> SOC 2 / ISO 27001 — MFA enforcement, public storage exposure, access‑revocation timing, periodic access review</p>
-        <p>Built a proof‑of‑concept demonstrating exactly where off‑the‑shelf GRC platforms (e.g. Vanta, Drata) stop covering an organization and where custom code becomes necessary: checks a vendor connector already handles (MFA enforcement, public storage exposure) alongside checks only custom code can perform against a company's own internal systems (timely access revocation after termination, periodic access reviews). Simulated AWS with moto and generated realistic fake HR/access data with Faker to test entirely offline — no real cloud account or company data required. Found and fixed a logic bug where the termination‑access check only tested presence/absence rather than actual revocation timing.</p>
-      </div>
-      <div class="project-card">
-        <span class="id">PROJ‑12</span>
-        <h3>Automated Compliance Evidence Pipeline &amp; Slack Alerting</h3>
-        <p class="meta"><b>Stack:</b> Python, YAML control catalog, pytest, Slack SDK (Block Kit), GitHub Actions<br><b>Controls:</b> SOC 2 &amp; ISO 27001 control catalog, continuous monitoring</p>
-        <p>Extended the compliance checks into a full evidence pipeline: results are written as timestamped JSON evidence, then compiled into a human‑readable Markdown audit report. Built a Slack bot that reads a single YAML control catalog mapping each check to SOC 2/ISO 27001 requirements, evaluates results against defined thresholds, and posts formatted Block Kit alerts to a dedicated channel for any failing control — authenticated with a bot token scoped to <code>chat:write</code> only. Scheduled the full pipeline via GitHub Actions so alerts fire daily with no manual step.</p>
-      </div>
-      <div class="project-card capstone">
-        <span class="id">PROJ‑13 · CAPSTONE</span>
-        <h3>Automated Audit‑Defensible Evidence Pipeline</h3>
-        <p class="meta"><b>Stack:</b> Terraform, GitHub Actions, OPA/Conftest, tfsec, Cosign/Sigstore, OSCAL, AWS<br><b>Controls:</b> Primary framework selected and defended (HIPAA Security Rule / SOC 2 Type II / CMMC Level 2), mapped to NIST 800‑53/800‑171</p>
-        <p>Governed a pre‑existing, non‑compliant Patient Intake API for a simulated 50‑person telehealth company, closing eight intentional compliance gaps within a 30‑day scenario constraint — without slowing engineering down. Integrated every layer built across the portfolio into one repository: policy‑as‑code gates, signed evidence pipeline, native cloud monitoring baselines, and an OSCAL component definition — then structured the full technical implementation and audit narrative around the chosen framework.</p>
-      </div>
-    </div>
-    <p class="project-note reveal">Projects 1–10 map to labs 2.3–6.1 of the CGEP curriculum; project 13 is the capstone. Full code and evidence at <a href="https://github.com/AmyBKay/cgep-labs" target="_blank" rel="noopener">github.com/AmyBKay/cgep-labs</a>.</p>
   </div>
 </section>
 
 <section id="work" class="alt">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-num">05</span>
-      <h2>Experience</h2>
+      <span class="section-num">04</span>
+      <h2>Experience &amp; projects</h2>
     </div>
     <div class="ledger reveal">
       <div class="ledger-entry">
-        <span class="ledger-date">Jul 2026–Present</span>
+        <span class="ledger-date">[Year–Year]</span>
         <div>
-          <span class="role">AI Governance Consultant · Independent — Client: StackAware</span>
-          <h3>Remote</h3>
-          <p>Run AI governance assessments against NIST AI RMF, perform ISO/IEC 42001 internal audits, and evaluate AI‑generated content for factual and reasoning errors — applying the same rigor used in financial and IT audit engagements.</p>
+          <span class="role">[Job Title]</span>
+          <h3>[Organization Name]</h3>
+          <p>[Placeholder — 1–2 sentences on scope and impact. Lead with a result: frameworks assessed, findings closed, or systems brought into compliance.]</p>
+          <span class="placeholder-flag">Replace with real entry</span>
         </div>
       </div>
       <div class="ledger-entry">
-        <span class="ledger-date">Jul 2021–Present</span>
+        <span class="ledger-date">[Year–Year]</span>
         <div>
-          <span class="role">Assistant Professor, Computational Sciences</span>
-          <h3>Liberty University — Lynchburg, VA</h3>
-          <p>Teach programming, systems, cloud computing, and information security; conduct active research in AI GRC, adversarial machine learning, and model supply chain integrity.</p>
+          <span class="role">[Job Title]</span>
+          <h3>[Organization Name]</h3>
+          <p>[Placeholder — same format. Three or four entries total reads well; more than that, group by theme instead.]</p>
+          <span class="placeholder-flag">Replace with real entry</span>
         </div>
       </div>
       <div class="ledger-entry">
-        <span class="ledger-date">Mar–Jul 2019</span>
+        <span class="ledger-date">[Year–Present]</span>
         <div>
-          <span class="role">Cybersecurity Consultant (GRC &amp; Security Engineering)</span>
-          <h3>FISMACS, LLC — Remote</h3>
-          <p>Designed enterprise GRC frameworks and led NIST CSF/RMF‑aligned assessments across critical infrastructure sectors; developed compliance automation artifacts aligned with FedRAMP and NIST SP 800‑53.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">Jan 2014–Dec 2018</span>
-        <div>
-          <span class="role">Project Consultant (Security &amp; Compliance)</span>
-          <h3>Bullaugen Technology — Part‑time</h3>
-          <p>Managed end‑to‑end security and compliance project lifecycles aligned with PMI/PMP and NIST practices; led stakeholder engagement translating technical findings into business‑aligned communications.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">May–Dec 2013</span>
-        <div>
-          <span class="role">Senior Cybersecurity Consultant</span>
-          <h3>Corporate Risk Solutions, Inc.</h3>
-          <p>Maintained continuous audit‑readiness for NERC CIP (CIP‑002 through CIP‑013); served as NERC CIP subject matter expert using AuditBoard and AssurX for compliance tracking and evidence collection.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">Jul 2001–Aug 2007</span>
-        <div>
-          <span class="role">Audit Associate</span>
-          <h3>Ben Ekedebe &amp; Co., Chartered Accountants</h3>
-          <p>Led all phases of the audit lifecycle — planning, fieldwork, reporting, issue validation — across IT and financial audit engagements aligned with SOX, GLBA, and Government Auditing Standards.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">Apr 2010–Feb 2011</span>
-        <div>
-          <span class="role">Business Office Manager</span>
-          <h3>Career Technical Institute NW — Washington, DC</h3>
-          <p>Managed institutional accounting operations aligned with GAAP; maintained audit trails per Government Auditing Standards, implemented GLBA Safeguards Rule protections for student data, and maintained PCI‑DSS compliance across payment processing systems.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">Apr–Jul 2009</span>
-        <div>
-          <span class="role">Information Systems Manager</span>
-          <h3>Mead Medical Group, LLC</h3>
-          <p>Led compliance initiatives for Medicare and Medicaid regulations; managed EHR data integrity, systems security, and regulatory integration strategies in a HIPAA‑governed environment.</p>
-        </div>
-      </div>
-      <div class="ledger-entry">
-        <span class="ledger-date">Sep 2007–May 2011</span>
-        <div>
-          <span class="role">Research Analyst (Computer Science)</span>
-          <h3>Bowie State University — Bowie, MD</h3>
-          <p>Project‑managed the design and deployment of a Volunteer Scheduling System for the American Red Cross using Agile SDLC and UML modeling; conducted research in network security, health informatics, and pattern recognition.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="education" class="alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="section-num">06</span>
-      <h2>Education &amp; publications</h2>
-    </div>
-    <div class="edu-pub-grid reveal">
-      <div>
-        <span class="sub-label">Education</span>
-        <div class="edu-item">
-          <div class="deg">PhD Candidate, Public Policy — AI Governance &amp; National Security</div>
-          <div class="inst">Liberty University, Lynchburg, VA · 2022–Present</div>
-          <div class="diss">Dissertation: AI GRC, AI Model Supply Chain Integrity, Adversarial Attacks, AI Oversight Authority</div>
-        </div>
-        <div class="edu-item">
-          <div class="deg">MS, Information Technology — Information Assurance &amp; Health IS</div>
-          <div class="inst">George Mason University, Fairfax, VA · 2012</div>
-        </div>
-        <div class="edu-item">
-          <div class="deg">MS, Management Information Systems — Information Systems Security</div>
-          <div class="inst">Bowie State University, Bowie, MD · 2009 · GPA 4.00</div>
-        </div>
-        <div class="edu-item">
-          <div class="deg">BS, Accounting</div>
-          <div class="inst">Abia State University · 2005</div>
-        </div>
-      </div>
-      <div>
-        <span class="sub-label">Selected research &amp; publications</span>
-        <ul class="pub-list">
-          <li>Accounting Information Systems and Corporate Failures: The Auditors' Stand — A Global Perspective</li>
-          <li>Design &amp; Development of a Volunteer Scheduling System for the American Red Cross</li>
-          <li>Health Information Sharing and Diagnostic Pattern Recognition Models</li>
-        </ul>
-        <span class="sub-label">Professional memberships</span>
-        <div class="member-row">
-          <span>Project Management Institute (PMI)</span>
-          <span>ISACA</span>
+          <span class="role">PhD Candidate</span>
+          <h3>AI Governance &amp; Public Policy</h3>
+          <p>[Placeholder — dissertation focus or research area, one sentence.]</p>
+          <span class="placeholder-flag">Replace with real entry</span>
         </div>
       </div>
     </div>
@@ -991,22 +651,22 @@
 <section id="contact" class="contact">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-num" style="color:var(--brass-soft)">07</span>
+      <span class="section-num" style="color:var(--brass-soft)">05</span>
       <h2>Let's talk</h2>
     </div>
     <div class="contact-grid">
       <div class="reveal">
         <p class="lede">
-          Open to conversations about GRC engineering, cloud security, IT audit,
-          and AI governance roles.
+          Open to conversations about audit, cybersecurity compliance, AI governance,
+          and operations roles — especially in the Phoenix and Tucson area.
         </p>
-        <a class="btn btn-primary" href="mailto:amaraben@yahoo.com">Send an email</a>
+        <a class="btn btn-primary" href="mailto:REPLACE@EXAMPLE.COM">Send an email</a>
       </div>
       <ul class="contact-list reveal">
-        <li><span class="k">Email</span><a href="mailto:amaraben@yahoo.com">amaraben@yahoo.com</a></li>
-        <li><span class="k">GitHub</span><a href="https://github.com/AmyBKay" target="_blank" rel="noopener">github.com/AmyBKay</a></li>
-        <li><span class="k">Location</span><span>Evington, VA</span></li>
-        <li><span class="k">Résumé</span><a href="resume.pdf" target="_blank" rel="noopener">Download PDF</a></li>
+        <li><span class="k">Email</span><a href="mailto:REPLACE@EXAMPLE.COM">REPLACE@EXAMPLE.COM</a></li>
+        <li><span class="k">LinkedIn</span><a href="#" target="_blank" rel="noopener">linkedin.com/in/REPLACE</a></li>
+        <li><span class="k">Location</span><span>Phoenix / Tucson, AZ</span></li>
+        <li><span class="k">Résumé</span><a href="#">Download PDF</a></li>
       </ul>
     </div>
   </div>
